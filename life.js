@@ -112,9 +112,12 @@ Board.prototype.getNeighbourVal = function (x, y) {
         this.getCellVal(x - 1, y + 1) +        // southwest
         this.getCellVal(x - 1, y);           // west     
 }
-
+//---------------------------------------------------------------------------------------------------------------------
+if (typeof module !== 'undefined' ) {
+    module.exports.Board = Board;
+} 
 //#####################################################################################################################
-// module.exports.Board = Board;
+
 
 var b1 = new Board(20, 10);
 b1.clear();
