@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px; 
+}
+
+td.alive {
+    background-color: black;
+}
+
+td.dead {
+    background-color: white;
+}
